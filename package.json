@@ -1,0 +1,11 @@
+{
+  "name": "recipes-app",
+  "version": "1.0.0",
+  "description": "This app will show a collection of recipes with an option to search for dietary restrictions. It will also include a form for the user to create, store, modify, and delete personal recipes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
