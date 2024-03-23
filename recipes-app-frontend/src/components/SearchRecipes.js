@@ -5,7 +5,7 @@ function SearchRecipes(){
     const [query, setQuery] = useState("");
 
     // Import data from the API and display it in the console
-    let query2 = "fish";
+    let query2 = "chorizo";
     
     const url = `https://api.api-ninjas.com/v1/recipe?query=${query2}`
     const [recipeList, setRecipeList] = useState([])
@@ -43,6 +43,7 @@ function SearchRecipes(){
                 <table>
                     <thead>
                         <tr>
+                        <th scope="col">Number</th>
                         <th scope="col">Title</th>
                         <th scope="col">Ingredients</th>
                         <th scope="col">Servings</th>
