@@ -8,7 +8,6 @@ function SearchRecipes(){
 
     // Import data from the API and display it in the console
     // Changed function to fetch await 
-    // Option: Give user a few regional cuisines to choose from and assign their selection to query2
     let query2 = "spanish";
     
     const url = `https://api.api-ninjas.com/v1/recipe?query=${query2}`
@@ -75,7 +74,7 @@ function SearchRecipes(){
                             <td>{eachRecipe.servings}</td>
                             <td>{eachRecipe.instructions}</td>
                             <td>
-                                <button>SAVE RECIPE</button>
+                                <button type="submit">SAVE RECIPE</button>
                             </td>
                             </tr>
                         ))}
