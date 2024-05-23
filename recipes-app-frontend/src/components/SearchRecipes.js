@@ -31,13 +31,18 @@ function SearchRecipes(){
     // Constant for filtering results based on the title of the recipes. This only applies 
     // to the already rendered recipes, does not change the query variable sent to the API.
     const Filter = (e) => {
-        setFilteredRecipes(recipeList.filter(f => f.title.toLowerCase().includes(e.target.value)))
+        setFilteredRecipes(recipeList.filter(f => f.ingredients.toLowerCase().includes(e.target.value)))
     }
 
     
     // Page display
     return (
         <div>
+            CHOOSE YOUR FAVORITE CUISINE
+            <br></br>
+            <button>Spanish</button>
+            <button>Italian</button>
+            <br></br>
             SEARCH OUR RECIPE DATABASE
             <br></br>
             <form>
