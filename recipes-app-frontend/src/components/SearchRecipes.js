@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import './Tables.css';
+
 
 function SearchRecipes(){
     // Set query constant from search box
@@ -40,7 +42,7 @@ function SearchRecipes(){
         <div>
             SEARCH OUR RECIPE DATABASE
             <br></br>
-            <form>
+            <form>  
                 <input 
                     type="text" 
                     placeholder="Search your recipe here..." 
@@ -61,6 +63,7 @@ function SearchRecipes(){
                         <th scope="col">Ingredients</th>
                         <th scope="col">Servings</th>
                         <th scope="col">Instructions</th>
+                        <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,6 +74,9 @@ function SearchRecipes(){
                             <td>{eachRecipe.ingredients}</td>
                             <td>{eachRecipe.servings}</td>
                             <td>{eachRecipe.instructions}</td>
+                            <td>
+                                <button>SAVE RECIPE</button>
+                            </td>
                             </tr>
                         ))}
                     </tbody>
