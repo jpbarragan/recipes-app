@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './Tables.css';
+import './Styling.css';
 
 
 function SearchRecipes(){
