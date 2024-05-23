@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import './Styling.css';
+
 
 function SearchRecipes(){
     // Set query constant from search box
@@ -6,7 +8,6 @@ function SearchRecipes(){
 
     // Import data from the API and display it in the console
     // Changed function to fetch await 
-    // Option: Give user a few regional cuisines to choose from and assign their selection to query2
     let query2 = "spanish";
     
     const url = `https://api.api-ninjas.com/v1/recipe?query=${query2}`
@@ -40,7 +41,7 @@ function SearchRecipes(){
         <div>
             SEARCH OUR RECIPE DATABASE
             <br></br>
-            <form>
+            <form>  
                 <input 
                     type="text" 
                     placeholder="Search your recipe here..." 
@@ -61,6 +62,7 @@ function SearchRecipes(){
                         <th scope="col">Ingredients</th>
                         <th scope="col">Servings</th>
                         <th scope="col">Instructions</th>
+                        <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,6 +73,9 @@ function SearchRecipes(){
                             <td>{eachRecipe.ingredients}</td>
                             <td>{eachRecipe.servings}</td>
                             <td>{eachRecipe.instructions}</td>
+                            <td>
+                                <button type="submit">SAVE RECIPE</button>
+                            </td>
                             </tr>
                         ))}
                     </tbody>
